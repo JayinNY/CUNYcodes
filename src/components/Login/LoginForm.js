@@ -15,7 +15,7 @@ export default class LoginForm extends Component {
       barStyle="light-content"
      />
       <TextInput
-       placeholder="username or email"
+       placeholder="Username or Email"
        placeholderTextColor="rgba(255,255,255,0.7)"
        returnKeyType="next"
        onSubmitEditing={()=>this.passwordInput.focus()}
@@ -25,7 +25,7 @@ export default class LoginForm extends Component {
        style={styles.input}
       />
       <TextInput
-       placeholder="password"
+       placeholder="Password"
        placeholderTextColor="rgba(255,255,255,0.7)"
        returnKeyType="go"
        secureTextEntry
@@ -33,8 +33,13 @@ export default class LoginForm extends Component {
        ref={(input) => this.passwordInput = input}
       />
       <TouchableOpacity style={styles.buttonContainer}>
+      <Text style={styles.buttonText}>REGISTER</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.buttonContainer}>
       <Text style={styles.buttonText}>LOGIN</Text>
       </TouchableOpacity>
+
      </View>
     );
   }
@@ -54,6 +59,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     backgroundColor:'#16a085',
     paddingVertical: 13,
+    marginBottom: 5,
     borderRadius:10
   },
   buttonText: {
