@@ -5,12 +5,15 @@ import { AppRegistry,
         StyleSheet
 } from 'react-native';
 import Splash from './Splash';
-import Login from './src/components/Login/Login'
+import Login from './src/components/Login/Login';
+import Register from './src/components/Register/Register';
 
 export default class AwesomeProject extends Component {
   render() {
     return (
-    <Login />
+
+    <Register />
+    
     );
   }
 }
